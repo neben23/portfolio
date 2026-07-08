@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 // Structure d'un projet affiché dans le portfolio.
-// Les liens sont optionnels : certains projets (homelab local) n'ont ni démo publique ni repo.
+// Les liens sont optionnels : un projet peut n'avoir ni démo publique ni repo.
 interface Project {
   title: string;
   description: string;
@@ -33,7 +33,8 @@ export class AppComponent {
         "Pi-hole (DNS + blocage pubs), WireGuard (VPN), NAS Samba, Plex, un reverse proxy " +
         "Nginx Proxy Manager dockerisé, et ce portfolio lui-même. Réseau segmenté, DNS interne " +
         "et accès distant sécurisé via VPN.",
-      tags: ['Proxmox', 'LXC', 'Docker', 'Nginx', 'WireGuard', 'Linux', 'DNS']
+      tags: ['Proxmox', 'LXC', 'Docker', 'Nginx', 'WireGuard', 'Linux', 'DNS'],
+      repo: 'https://github.com/neben23/homelab'
     }
   ];
 
