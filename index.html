@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benjamin Hansen — Support IT & Systèmes</title>
+  <meta name="description"
+        content="Portfolio de Benjamin Hansen — support IT, systèmes/Linux et développement web. Homelab Proxmox, Docker, réseau." />
+  <link rel="icon" href="public/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+
+    <!-- Hero -->
+    <section id="hero">
+      <h1>Benjamin Hansen</h1>
+      <p class="subtitle">Support IT · Systèmes &amp; Linux · Développement web</p>
+      <p class="description">
+        Étudiant en informatique, passionné d'infrastructure. J'apprends en faisant :
+        mon homelab me sert de terrain de jeu pour containeriser, réseauter et automatiser.
+        Je cherche un premier poste où mettre les mains dans les systèmes tous les jours.
+      </p>
+      <div class="hero-buttons">
+        <a href="mailto:hansen.benjamin.pro@gmail.com" class="btn primary">Me contacter</a>
+        <a href="public/cv-benjamin-hansen.pdf" download class="btn secondary">Télécharger mon CV</a>
+        <a href="https://github.com/neben23" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p class="about-text">
+        Passionné de Linux et d'infrastructure, j'apprends en construisant. J'ai monté et
+        j'administre seul mon propre homelab (serveur Proxmox, conteneurs, DNS, VPN, reverse proxy),
+        ce qui m'a donné de vraies bases en virtualisation, réseau et dépannage. Je me forme à l'IT
+        en cours du soir (bachelier en informatique de gestion) et je suis disponible à temps plein.
+      </p>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">Proxmox</span>
+        <span class="skill-tag">LXC</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Nginx</span>
+        <span class="skill-tag">DNS</span>
+        <span class="skill-tag">WireGuard</span>
+        <span class="skill-tag">Réseau</span>
+        <span class="skill-tag">SSH</span>
+        <span class="skill-tag">Bash</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+      <h2>Projets</h2>
+
+      <article class="project-card">
+        <h3>Homelab auto-hébergé (Proxmox + Docker)</h3>
+        <p>
+          Serveur maison sous Proxmox VE hébergeant 7 conteneurs LXC Debian : Pi-hole (DNS + blocage
+          pubs), WireGuard (VPN), NAS Samba, Plex, un reverse proxy Nginx Proxy Manager dockerisé, et
+          ce portfolio lui-même. Réseau segmenté, DNS interne et accès distant sécurisé via VPN.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Proxmox</span>
+          <span class="tag">LXC</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Nginx</span>
+          <span class="tag">WireGuard</span>
+          <span class="tag">Linux</span>
+          <span class="tag">DNS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/neben23/homelab" target="_blank" rel="noopener" class="btn secondary">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Ce portfolio (HTML / CSS / JS)</h3>
+        <p>
+          Site statique écrit à la main en HTML, CSS et un peu de JavaScript — sans framework.
+          Hébergé sur Vercel (déploiement automatique à chaque push Git) et auto-hébergé sur le homelab
+          derrière le reverse proxy.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Git</span>
+          <span class="tag">Vercel</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:hansen.benjamin.pro@gmail.com">hansen.benjamin.pro@gmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/neben23" target="_blank" rel="noopener">github.com/neben23</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/benjamin-hansen-dev/" target="_blank" rel="noopener">linkedin.com/in/benjamin-hansen-dev</a></p>
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© <span id="year"></span> Benjamin Hansen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+/* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -9,7 +10,7 @@ body {
 
 section { padding: 4rem 2rem; max-width: 860px; margin: 0 auto; }
 
-/* HERO */
+/* Hero */
 #hero {
   text-align: center;
   padding: 7rem 2rem 5rem;
@@ -41,6 +42,7 @@ section { padding: 4rem 2rem; max-width: 860px; margin: 0 auto; }
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .btn {
   display: inline-block;
@@ -51,10 +53,7 @@ section { padding: 4rem 2rem; max-width: 860px; margin: 0 auto; }
   font-size: 0.95rem;
   transition: all 0.2s;
 }
-.btn.primary {
-  background: #7c3aed;
-  color: #fff;
-}
+.btn.primary { background: #7c3aed; color: #fff; }
 .btn.primary:hover { background: #6d28d9; }
 .btn.secondary {
   background: transparent;
@@ -63,7 +62,7 @@ section { padding: 4rem 2rem; max-width: 860px; margin: 0 auto; }
 }
 .btn.secondary:hover { background: #a78bfa15; }
 
-/* SECTIONS */
+/* Titres de section */
 h2 {
   font-size: 2rem;
   color: #fff;
@@ -80,7 +79,7 @@ h2::after {
   border-radius: 2px;
 }
 
-/* À PROPOS */
+/* À propos */
 .about-text {
   color: #b8b8cc;
   font-size: 1.05rem;
@@ -88,7 +87,7 @@ h2::after {
   max-width: 680px;
 }
 
-/* SKILLS */
+/* Compétences */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +107,7 @@ h2::after {
   background: #2a1f50;
 }
 
-/* PROJECTS */
+/* Projets */
 .project-card {
   background: #14142a;
   border: 1px solid #2a2a4a;
@@ -142,19 +141,33 @@ h2::after {
   font-size: 0.78rem;
   border: 1px solid #2a2a50;
 }
+.project-links {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+}
 
-/* CONTACT */
-#contact {
-  text-align: center;
-  padding-bottom: 5rem;
-}
-#contact p {
-  margin: 0.6rem 0;
-  color: #9ca3af;
-}
+/* Contact */
+#contact { text-align: center; padding-bottom: 3rem; }
+#contact p { margin: 0.6rem 0; color: #9ca3af; }
 #contact a {
   color: #a78bfa;
   text-decoration: none;
   font-weight: 500;
 }
 #contact a:hover { color: #c4b5fd; }
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+  border-top: 1px solid #2a2a4a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #hero h1 { font-size: 2.4rem; }
+  section { padding: 3rem 1.5rem; }
+}
